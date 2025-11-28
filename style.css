@@ -1,0 +1,1188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: white;
+    background-image: url('./Images/Website\ Wallpaper.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+
+nav {
+    /* Below is for Deskstop & Laptops*/
+    margin-top: 10px;
+    border-bottom: 2px solid black;
+    .logo-name {
+        display: inline-block;
+        margin-left: 1vh;
+    }
+    
+    .webTitle {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+        font-weight: 700;
+        letter-spacing: 8px;
+        position: absolute;
+        top: .8rem; 
+    }
+    .logo-design {
+        float: left;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 2.5rem;
+        height: 2.5rem;        
+    }
+    .deskstop-nav-links {
+        float: right;
+        margin-right: 2vh;
+        margin-top: .6rem;
+        
+
+        a {
+            text-decoration: none;               
+        }
+        .link {
+            display: inline;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 23px;
+            margin-right: 20px;
+            cursor: pointer;
+            transition: transform .2s;
+            &:hover {
+                transform: scale(1.1);
+                background-color: rgba(173, 216, 230, 0.806);
+                border-radius: 10px;
+            }
+        }
+        
+        
+    }
+
+    .hamburger-checkbox {
+        display: none;
+    }
+    .hamburger-lists {
+        content-visibility: hidden;
+    }
+}
+
+/*Below is for the Header Section*/
+
+.header-main {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .header-title {
+        text-align: center;
+        letter-spacing: 8px;
+        text-shadow: 2px 2px 4px black;
+    }
+    .header-subtitle {
+        text-align: center;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    .header-buttons {
+        .header-button-about {
+            background-color: snow;
+            border-radius: 20px;
+            padding: 10px;
+            transition: transform .2s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .header-button-portfolio {
+            background-color: rgba(255, 0, 0, 0.795);
+            border-radius: 20px;
+            padding: 10px;
+            transition: transform .2s;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+
+        .header-button-link {
+            text-decoration: none;
+            color: black;
+            font-size: 13px;
+            font-weight: 500; 
+        }
+    }
+
+}
+
+
+
+.introduction {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    gap: 20px;   
+    .introduction-image-design {
+        width: 210px;
+        height: 240px;
+        border-radius: 50%;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.683);
+    }
+
+    .introduction-text {
+        width: 60%;
+        
+        .introduction-title {
+            letter-spacing: 5px;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px black;
+        }
+        .introduction-para {
+            margin-top: 5px;
+            font-weight: 300;
+            font-size: 18px;
+            color: black;
+            background-color: rgba(255, 250, 250, 0.735);
+            padding: 1rem;
+            border-radius: 10px;
+            .introduction-link {
+            color: blue;
+            }
+        }
+    }
+    
+}
+
+
+
+.my-work-summary {
+    padding: 50px;
+    .work-summary-title {
+        text-align: center;
+        font-size: 30px;
+        letter-spacing: 5px;
+        text-shadow: 2px 2px 4px black;
+    }
+    .work-summary-para {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 300;
+        font-size: 18px;
+        padding: 1rem;
+        .work-summary-link {
+            color: red;
+        }
+    }
+}
+
+.important {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    width: 100%;
+    padding: 50px;
+    .important-terms {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+        .terms-title {
+            text-shadow: 2px 2px 4px black;
+        }
+    }
+    .important-policy {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+        .policy-title {
+            text-shadow: 2px 2px 4px black;
+        }
+    }
+    .important-disclaimer {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.6;
+        .disclaimer-title {
+            text-shadow: 2px 2px 4px black;
+        }
+    }
+}
+
+.faq {
+  padding: 1rem .5rem;
+}
+
+.faq-title {
+  text-align: center;
+  text-shadow: 2px 2px 4px black;
+}
+
+.faq-container {
+  width: 700px;
+  list-style: none;
+  margin: 2rem auto;
+  padding: 0;
+}
+
+.faq-list {
+  border-bottom: 1px solid white;
+  margin: 1rem 0;
+}
+
+.faq-question {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  text-shadow: 2px 2px 4px black;
+}
+
+.arrow {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-left: 10px solid white;
+  border-bottom: 6px solid transparent;
+  transition: transform .5s;
+}
+
+.arrow-rotated {
+  transform: rotate(90deg);
+}
+
+.faq-answer {
+  overflow: hidden;
+  height: 0;
+  padding: 0 1rem;
+  transition: height 0.5s ease, padding 0.5s ease;
+}
+
+.faq-answer.open {
+  height: auto;
+  padding: .5rem 1rem;
+}
+
+.faq-answer p {
+  color: lightblue;
+  margin: 0;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+
+/* Footer Section */
+.footer-main {
+    width: 100%;
+    color: white;
+    padding: 3rem;
+
+    .footer-logo {
+        text-align: center;
+
+        .footer-logo-design {
+            margin-bottom: 1rem;
+            width: 10rem;
+            height: 10rem;
+            border-radius: 20px;
+        }
+
+        .footer-list {
+            display: inline-block;
+            border-top: 1px solid white;
+            padding: 1rem;
+            
+            .footer-links {
+                display: inline-block;
+                margin-right: 5rem;
+                color: white;
+                text-decoration: none;
+                margin-right: 1rem;
+                font-size: .9rem;
+                transition: transform .2s;
+                &:hover {
+                    text-decoration: underline;
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+    .footer-copyright {
+        text-align: center;
+        width: 100%;
+        height: auto;
+
+        .footer-copyright-text {
+            text-align: center;
+            font-size: .9rem;
+        }
+    }
+    
+}
+/*Below are the pop ups for the footer*/
+.popup-t, .popup-p, .popup-s {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.854);
+
+    opacity: 0;
+    visibility: hidden;
+
+    transition: all .3s;
+    &:target {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Below is for the hamburger menu design */
+    z-index: 250;
+
+    .footer-content-t, .footer-content-p, .footer-content-s{
+        width: 75%;
+        height: 25rem;
+        background-color: white;
+        box-shadow: 0 2rem 4rem black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        color: black;
+
+        .social-para {
+            font-size: 18px;
+        }
+        .terms-para {
+            font-size: 18px;
+        }
+        .policy-para {
+            font-size: 18px;
+        }
+
+        /* Below is for Socials Design.*/
+
+        .socials-links {
+            text-align: center;
+            margin-top: 1rem;
+            
+            .fa {
+                width: 3rem;
+                height: 2rem;
+                font-size: 2rem;
+                text-align: center;
+                text-decoration: none;
+                color: black;
+            }
+        }        
+    }
+
+    .close-button {
+        background-color: rgba(0, 0, 0, 0.82);
+        color: white;
+        font-size: 23px;
+        padding: 10px;
+        border-radius: 10px;
+        text-decoration: none;
+        position: absolute;
+        top: 80%;
+        left: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*For Mobile Devices & Tablets on Navbar*/
+@media screen and (max-width: 1250px) {
+    .deskstop-nav-links {
+        content-visibility: hidden;
+    }
+
+
+     /*Below is for Hamburger Menu*/
+     .hamburger-nav-links {
+        .hamburger-checkbox {
+            display: none;
+        }
+
+        .hamburger-button {
+            background-color: rgba(0, 0, 0, 0.776);
+            height: 2.1rem;
+            width: 2.1rem;
+            position: fixed;
+            top: 0.7rem;
+            right: 1.5rem;
+            border-radius: 50%;
+            z-index: 200;
+            box-shadow: 0 1rem 3rem snow;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .hamburger-design {
+            height: 2rem;
+            width: 2rem;
+            border-radius: 50%;
+            position: fixed;
+            top: 0.7rem;
+            right: 1rem;
+            z-index: 100;
+            transition: transform .8s cubic-bezier(0.85, 0, 0.15, 1);
+
+            /*transform: scale(100);*/
+        }
+
+        .hamburger-nav {
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 150;
+            background-image: radial-gradient(rgba(173, 216, 230, 0.598), rgba(173, 216, 230, 0.301));
+            opacity: 0;
+            width: 0;
+            transition: all .8s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+        }
+
+        .hamburger-lists {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            list-style: none;
+            text-align: center;
+            content-visibility: visible;
+        }
+
+        .hamburger-items {
+            margin: 1rem;
+            &:hover {
+                background-color: snow;
+                border-radius: 10px;
+            }
+        }
+
+        .hamburger-links {
+            font-size: 2.5rem;
+            font-weight: 300;
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+        }
+    }
+
+    /* Funationality*/
+    .hamburger-checkbox:checked ~ .hamburger-design {
+        transform: scale(100);
+    }
+    .hamburger-checkbox:checked ~ .hamburger-nav {
+        opacity: 1;
+        width: 100%;
+    }
+
+    /* 3 Lines Icon Making*/
+    .nav-icon {
+        position: relative;
+        margin-top: 16px;
+        cursor: pointer;
+        &, &:before, &::after {
+            width: 0.9rem;
+            height: 2px;
+            background-color: white;
+            display: inline-block;
+
+        }
+
+        &::before, &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            transition: 1s;
+        }
+
+        &::before {top: -0.5rem;}
+        &::after {top: 0.5rem;}
+    }
+
+    .hamburger-checkbox:checked + .hamburger-button .nav-icon {
+        background-color: transparent;
+    }
+    .hamburger-checkbox:checked + .hamburger-button .nav-icon::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+    .hamburger-checkbox:checked + .hamburger-button .nav-icon::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+}   
+
+
+/*For larger scrren from 1920px onwards*/
+@media screen and (min-width: 1920px) {
+    .header-main {
+        height: 550px;
+        .header-text {
+            .header-title {
+                font-size: 60px;
+            }
+            .header-subtitle {
+                font-size: 32px;
+            }
+        }
+        .header-buttons {
+            margin-top: 30px;
+            .header-button-about {
+                padding: 15px;
+            }
+            .header-button-portfolio {
+                padding: 15px;
+            }
+            .header-button-link {
+                font-size: 32px;
+            }
+        }
+    }
+
+    .introduction {
+        padding: 40px;
+        .introduction-image {
+            .introduction-image-design {
+                width: 300px;
+                height: 300px;
+            }
+        }
+        .introduction-text {
+            .introduction-title {
+                font-size: 50px;
+            }
+            .introduction-para {
+                font-size: 30px;
+            }
+        }
+    }
+
+    .my-work-summary {
+        .work-summary-title {
+            font-size: 50px;
+        }
+        .work-summary-para {
+            font-size: 30px;
+        }
+    }
+
+    .important {
+        .important-terms {
+            .terms-title {
+                font-size: 50px;
+            }
+            .terms-para {
+                font-size: 28px;
+            }
+        }
+        .important-disclaimer {
+            .disclaimer-title {
+                font-size: 50px;
+            }
+            .disclaimer-para {
+                font-size: 28px;
+            }
+        }
+        .important-policy {
+            .policy-title {
+                font-size: 50px;
+            }
+            .policy-para {
+                font-size: 28px;
+            }
+        }
+    }
+
+    .faq {
+        .faq-title {
+            font-size: 2.5rem;
+        }
+        .faq-container {
+            width: 55%;
+            .faq-list {
+                .faq-question {
+                    font-size: 1.8rem;
+                    .arrow {
+                        border-top: 8px solid transparent;
+                        border-left: 14px solid black;
+                        border-bottom: 8px solid transparent;
+                    }
+                }
+                .faq-answer {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    .footer-main {
+        .footer-logo {
+            .footer-list {
+                .footer-links {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        
+        .footer-copyright {
+            .footer-copyright-text {
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    .popup-p, .popup-s, .popup-t {
+        .footer-content-p, .footer-content-s, .footer-content-t {
+            h2 {
+                font-size: 34px;
+            }
+            .social-para {
+                font-size: 34px;
+            }
+            .terms-para {
+                font-size: 34px;
+            }
+            .policy-para {
+                font-size: 34px;
+            }
+            .close-button {
+                font-size: 28px;
+            }
+            .socials-links {
+                .fa {
+                    width: 3.8rem;
+                    height: 3rem;
+                    font-size: 3rem;
+                }
+            }
+        }        
+    }
+}
+
+/* For Large Screens ONLY below 1920px*/
+@media screen and (min-width: 1250px) and (max-width: 1910px) {
+    .header-main {
+        height: 500px;
+    }
+    .header-text {
+        .header-title {
+            font-size: 50px;
+            letter-spacing: 6px;
+        }
+        .header-subtitle {
+            margin-top: 15px;
+            font-size: 22px;
+        }
+    }
+    .header-button-about {
+        margin-top: 30px;
+    }
+    .header-button-portfolio {
+        margin-top: 20px;
+    }
+    .header-button-link {
+        font-size: 23px;
+    }
+
+
+    .introduction {
+        padding: 50px;
+        gap: 30px;   
+        .introduction-image-design {
+            width: 300px;
+            height: 300px;
+        }
+        .introduction-text {
+            width: 50%;
+        }
+        .introduction-title {
+            font-size: 35px;
+            letter-spacing: 5px;
+            margin-top: 30px;
+        }
+        .introduction-para {
+            margin-top: 20px;
+            font-weight: 300;
+            font-size: 20px;
+        }
+    }
+
+    .my-work-summary {
+        .work-summary-title {
+            font-size: 45px;
+        }
+        .work-summary-para {
+            font-size: 22px;
+            margin-top: 20px;
+        }
+    }
+
+    .faq {
+        .faq-title {
+            font-size: 2.3rem;
+        }
+        .faq-container {
+            width: 60%;
+            .faq-list {
+                .faq-question {
+                    font-size: 1.5rem;
+                    .arrow {
+                        border-top: 7px solid transparent;
+                        border-left: 12px solid black;
+                        border-bottom: 7px solid transparent;
+                    }
+                }
+                .faq-answer {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+    .footer-main {
+        .footer-logo {
+            .footer-list {
+                .footer-links {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        
+        .footer-copyright {
+            .footer-copyright-text {
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    .popup-p, .popup-s, .popup-t {
+        .footer-content-p, .footer-content-s, .footer-content-t {
+            h2 {
+                font-size: 32px;
+            }
+            .social-para {
+                font-size: 30px;
+            }
+            .terms-para {
+                font-size: 30px;
+            }
+            .policy-para {
+                font-size: 30px;
+            }
+            .close-button {
+                font-size: 26px;
+            }
+            .socials-links {
+                .fa {
+                    width: 3.5rem;
+                    height: 2.8rem;
+                    font-size: 2.8rem;
+                }
+            }
+        }        
+    }    
+}
+
+
+
+
+
+/* For Tablet Devices ONLY */
+@media screen and (min-width: 510px) and (max-width: 1240px) {
+    .body {
+        padding: 3px;
+    }
+
+    .header-main {
+        height: 400px;
+    }
+    .header-text {
+        .header-title {
+            font-size: 40px;
+            letter-spacing: 5px;
+        }
+        .header-subtitle {
+            margin-top: 10px;
+            font-size: 20px;
+        }
+    }
+    .header-button-about {
+        margin-top: 20px;
+    }
+    .header-button-portfolio {
+        margin-top: 20px;
+    }
+    .header-button-link {
+        font-size: 18px;
+    }
+
+    .introduction {
+        .introduction-title {
+            margin-top: 10px;
+        }
+        .introduction-image-design {
+            width: 230px;
+            height: 265px;
+            border-radius: 10%;
+        }
+    }
+    /*Below is for my work summary section*/
+    .my-work-summary {
+        .work-summary-title {
+            font-size: 25px;
+        }
+        .work-summary-para {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    }
+
+    /*Below is for terms and rights*/
+    .important {
+        flex-direction: column;
+        gap: 20px;
+        padding: 25px;
+    }
+
+    .faq {
+        .faq-title {
+            font-size: 1.6rem;
+        }
+        .faq-container {
+            width: 90%;
+            .faq-list {
+                .faq-question {
+                    font-size: 1.2rem;
+                    .arrow {
+                        border-top: 5px solid transparent;
+                        border-left: 9px solid black;
+                        border-bottom: 5px solid transparent;
+                    }
+                }
+                .faq-answer {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .footer-main {
+        .footer-logo {
+            .footer-list {
+                .footer-links {
+                    font-size: 1rem;
+                }
+            }
+        }
+        
+        .footer-copyright {
+            .footer-copyright-text {
+                font-size: 1rem;
+            }
+        }
+        .footer-logo {
+            .footer-logo-design {
+                width: 8rem;
+                height: 8rem;
+            }
+        }
+    }
+
+    .popup-p, .popup-s, .popup-t {
+        .footer-content-p, .footer-content-s, .footer-content-t {
+            h2 {
+                font-size: 30px;
+            }
+            .social-para {
+                font-size: 22px;
+            }
+            .terms-para {
+                font-size: 22px;
+            }
+            .policy-para {
+                font-size: 22px;
+            }
+            .close-button {
+                font-size: 22px;
+            }
+            .socials-links {
+                .fa {
+                    width: 3.3rem;
+                    height: 2.4rem;
+                    font-size: 2.4rem;
+                }
+            }
+        }        
+    }    
+
+
+    .logo-name {
+        width: 10px;
+        height: 40px;
+        .webTitle {
+            font-size: 19px;
+        }
+        
+    }
+    
+    .logo-design {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+   
+}
+
+
+/*For Mobile Devices ONLY8*/
+@media screen and (min-width: 200px) and (max-width: 510px) {  
+    .header-main {
+        height: 250px;
+        .header-text {
+            .header-title {
+                font-size: 20px;
+                letter-spacing: 3px;
+            }
+            .header-subtitle {
+                margin-top: 10px;
+                font-size: 12px;
+            }
+        }
+    }
+
+    .header-buttons {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin-top: 20px;
+    }
+
+    .header-button-about, .header-button-portfolio {
+        .header-button-link {
+            font-size: 10px;
+        }
+    }
+    
+
+    .introduction {
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+        .introduction-image {
+            text-align: center;
+        }
+        .introduction-image-design {
+            width: 150px;
+            height: 150px;
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+        .introduction-text {
+            width: 100%;
+        }
+        .introduction-title {
+            font-size: 22px;
+            letter-spacing: 3px;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .introduction-para {
+            margin-top: 10px;
+            font-weight: 300;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+
+
+    /*Below is for my work summary section*/
+    .my-work-summary {
+        padding: 30px;
+        .work-summary-title {
+            font-size: 20px;
+        }
+        .work-summary-para {
+            font-size: 16px;
+            margin-top: 5px;
+            text-align: left;
+            background-color: rgba(255, 250, 250, 0.735);
+            color: black;
+            border-radius: 10px;
+        }
+    }
+
+    /*Below is for terms and rights*/
+    .important {
+        flex-direction: column;
+        padding: 20px;
+        gap: 10px;
+    }
+    .important-terms {
+        .terms-title {
+            font-size: 16px;
+        }
+       .terms-para {
+            font-size: 14px;
+        }
+    }
+    .important-disclaimer {
+        margin-top: 5px;
+        .disclaimer-title {
+            font-size: 16px;
+        }
+       .disclaimer-para {
+            font-size: 14px;
+        }
+    }
+    .important-policy {
+        .policy-title {
+            font-size: 16px;
+        }
+       .policy-para {
+            font-size: 14px;
+        }
+    }
+
+    .faq {
+        padding: .5rem .2rem;
+        .faq-title {
+            font-size: 1.1rem;
+        }
+        .faq-container {
+            width: 90%;
+            .faq-list {
+                .faq-question {
+                    font-size: .9rem;
+                    .arrow {
+                        border-top: 4px solid transparent;
+                        border-left: 7px solid black;
+                        border-bottom: 4px solid transparent;
+                    }
+                }
+                .faq-answer {
+                    font-size: .8rem;
+                }
+            }
+        }
+    }
+
+    /*Below is for Footer Section*/
+    .footer-main {
+        .footer-copyright {
+            .footer-copyright-text {
+               font-size: 14px;
+            }
+        }
+        .footer-list {
+            .footer-links {
+                font-size: .2rem;
+            }
+        }
+        .footer-logo {
+             .footer-logo-design {
+                width: 6rem;
+                height: 6rem;
+            }
+        }
+    }
+
+
+   .popup-p, .popup-s, .popup-t {
+        .footer-content-p, .footer-content-s, .footer-content-t {
+            .terms-para, .policy-para, .social-para {
+                font-size: 14px;
+            }
+            .close-button {
+                font-size: 14px;
+            }
+            .socials-links {
+                .fa {
+                    width: 2rem;
+                    height: 1.5rem;
+                    font-size: 1.5rem;
+                }
+            }
+        }
+   }
+   
+   
+
+
+
+    
+    
+    .logo-name {     
+        width: 10px;
+        height: 40px;
+        .webTitle {
+            font-size: 17px;
+            top: 1rem;
+        }
+        .logo-design {
+            width: 2.2rem;
+            height: 2.2rem;
+        }
+    }    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
